@@ -1,0 +1,68 @@
+{
+  "scope": "Isolated local generator regression checks; no crawler execution",
+  "checks": [
+    {
+      "phase": "baseline",
+      "cases": 92,
+      "fixture_urls": 212,
+      "u02_header": [
+        [
+          "X-Robots-Tag",
+          "index,follow"
+        ]
+      ],
+      "default_deployment": "Free Python Web Service",
+      "result": "Passed"
+    },
+    {
+      "phase": "restricted",
+      "cases": 92,
+      "fixture_urls": 214,
+      "u02_header": [
+        [
+          "X-Robots-Tag",
+          "noindex"
+        ]
+      ],
+      "default_deployment": "Free Python Web Service",
+      "result": "Passed"
+    },
+    {
+      "phase": "restored",
+      "cases": 92,
+      "fixture_urls": 214,
+      "u02_header": [
+        [
+          "X-Robots-Tag",
+          "index,follow"
+        ]
+      ],
+      "default_deployment": "Free Python Web Service",
+      "result": "Passed"
+    },
+    {
+      "phase": "baseline",
+      "cases": 92,
+      "fixture_urls": 212,
+      "u02_header": [
+        [
+          "X-Robots-Tag",
+          "index,follow"
+        ]
+      ],
+      "default_deployment": "Free Python Web Service",
+      "result": "Passed"
+    },
+    {
+      "base_path": "/robots-v2",
+      "scope": "Structural graph and generated host-root robots rules, not remote deployment",
+      "result": "Passed"
+    }
+  ],
+  "csv_checks": {
+    "all_cases": 92,
+    "new_header_cases": 20,
+    "individual_start_urls": 92,
+    "all_actual_results": "Not run"
+  }
+}

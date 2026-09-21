@@ -1,0 +1,10 @@
+{
+  "ticket": "STUDIO-5864",
+  "bot_meta_name": "SearchStax Crawler",
+  "bot_mapping_confirmed": true,
+  "crawler_http_user_agent": "SearchStax Crawler",
+  "base_path": "",
+  "phase": "baseline",
+  "site_version": "2.0.0",
+  "identity_source": "Default bot name supplied by QA; record the actual HTTP User-Agent including any version suffix during execution."
+}

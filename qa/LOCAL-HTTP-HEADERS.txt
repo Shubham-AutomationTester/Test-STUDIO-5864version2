@@ -1,0 +1,85 @@
+LOCAL ORIGIN HTTP EVIDENCE ONLY. Not a public Render-host test.
+
+# GET /cases/h03/
+HTTP/1.1 200 OK
+Server: Studio5864FixtureServer/2.0 
+Date: Mon, 21 Sep 2026 18:21:43 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2235
+Cache-Control: no-store, max-age=0
+X-QA-Fixture-Version: 2.0.0
+X-Content-Type-Options: nosniff
+Connection: close
+X-Robots-Tag: noindex, nofollow
+
+
+# GET /cases/h07/
+HTTP/1.1 200 OK
+Server: Studio5864FixtureServer/2.0 
+Date: Mon, 21 Sep 2026 18:21:43 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2724
+Cache-Control: no-store, max-age=0
+X-QA-Fixture-Version: 2.0.0
+X-Content-Type-Options: nosniff
+Connection: close
+X-Robots-Tag: noindex
+X-Robots-Tag: nofollow
+
+
+# GET /cases/h15/
+HTTP/1.1 200 OK
+Server: Studio5864FixtureServer/2.0 
+Date: Mon, 21 Sep 2026 18:21:43 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2804
+Cache-Control: no-store, max-age=0
+X-QA-Fixture-Version: 2.0.0
+X-Content-Type-Options: nosniff
+Connection: close
+X-Robots-Tag: noindex,nofollow
+X-Robots-Tag: SearchStax Crawler: index,follow
+
+
+# GET /cases/h17/
+HTTP/1.1 200 OK
+Server: Studio5864FixtureServer/2.0 
+Date: Mon, 21 Sep 2026 18:21:43 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2758
+Cache-Control: no-store, max-age=0
+X-QA-Fixture-Version: 2.0.0
+X-Content-Type-Options: nosniff
+Connection: close
+X-Robots-Tag: index,follow
+X-Robots-Tag: SearchStax Crawler: noindex,nofollow
+
+
+# GET /cases/h27/
+HTTP/1.1 200 OK
+Server: Studio5864FixtureServer/2.0 
+Date: Mon, 21 Sep 2026 18:21:43 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2821
+Cache-Control: no-store, max-age=0
+X-QA-Fixture-Version: 2.0.0
+X-Content-Type-Options: nosniff
+Connection: close
+X-Robots-Tag: index,follow
+X-Robots-Tag: SearchStax Crawler: noindex
+X-Robots-Tag: SearchStax Crawler: nofollow
+
+
+# GET /cases/h32/
+HTTP/1.1 200 OK
+Server: Studio5864FixtureServer/2.0 
+Date: Mon, 21 Sep 2026 18:21:43 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2450
+Cache-Control: no-store, max-age=0
+X-QA-Fixture-Version: 2.0.0
+X-Content-Type-Options: nosniff
+Connection: close
+X-Robots-Tag: 
+X-Robots-Tag: noindex
+

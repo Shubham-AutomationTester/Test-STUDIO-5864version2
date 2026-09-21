@@ -1,0 +1,36 @@
+{
+  "scope": "Offline browser UI with intercepted local HTTP responses. Direct browser localhost navigation is blocked by environment policy. Direct GET/HEAD tests are separate; no SearchStax run",
+  "errors": [],
+  "checks": [
+    {
+      "name": "Overview never offers a suite crawl seed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Header catalog has 34 cases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Header H15 dialog shows exact identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "H15 dialog gives individual scenario URL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile layout no horizontal viewport overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser has no JavaScript runtime errors",
+      "passed": true,
+      "detail": "[]"
+    }
+  ]
+}

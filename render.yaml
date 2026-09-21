@@ -1,0 +1,13 @@
+# Default: a FREE web service serving static fixtures with real repeated headers.
+# Deploy a NEW service; this is intentionally not the old static-site definition.
+services:
+  - type: web
+    name: studio-5864-robots-qa-v2
+    runtime: python
+    plan: free
+    buildCommand: python3 tools/build.py
+    startCommand: python3 tools/serve.py --bind 0.0.0.0
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"

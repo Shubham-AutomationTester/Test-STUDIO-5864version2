@@ -1,0 +1,93 @@
+﻿Case ID,Scenario,Start URL,Parent marker,Readiness
+M01,Control: no robots directives,{BASE_URL}/cases/m01/,QA5864M01P,Ready
+M02,Explicit index and follow,{BASE_URL}/cases/m02/,QA5864M02P,Ready
+M03,noindex still discovers the child,{BASE_URL}/cases/m03/,QA5864M03P,Ready
+M04,nofollow still indexes the parent,{BASE_URL}/cases/m04/,QA5864M04P,Ready
+M05,Combined tokens: no spaces,{BASE_URL}/cases/m05/,QA5864M05P,Ready
+M06,Combined tokens: uppercase,{BASE_URL}/cases/m06/,QA5864M06P,Ready
+M07,Combined tokens: comma and space,{BASE_URL}/cases/m07/,QA5864M07P,Ready
+M08,Whitespace-separated tokens,{BASE_URL}/cases/m08/,QA5864M08P,Ready
+M09,"Tabs, newlines and extra whitespace",{BASE_URL}/cases/m09/,QA5864M09P,Ready
+M10,"Mixed-case tag, name and attributes",{BASE_URL}/cases/m10/,QA5864M10P,Ready
+M11,Empty separators surrounding valid tokens,{BASE_URL}/cases/m11/,QA5864M11P,Ready
+M12,Repeated identical directives,{BASE_URL}/cases/m12/,QA5864M12P,Ready
+M13,Unknown token beside valid noindex,{BASE_URL}/cases/m13/,QA5864M13P,Ready
+M14,Empty robots content,{BASE_URL}/cases/m14/,QA5864M14P,Ready
+M15,Missing content attribute,{BASE_URL}/cases/m15/,QA5864M15P,Ready
+M16,Directive substrings are not tokens,{BASE_URL}/cases/m16/,QA5864M16P,Ready
+M17,Robots tag inside an HTML comment,{BASE_URL}/cases/m17/,QA5864M17P,Ready
+M18,"Robots meta in body, not head",{BASE_URL}/cases/m18/,QA5864M18P,Ready
+M19,http-equiv is not a real HTTP header,{BASE_URL}/cases/m19/,QA5864M19P,Ready
+M20,Separate generic meta tags,{BASE_URL}/cases/m20/,QA5864M20P,Confirm
+M21,Conflicting directives in one meta tag,{BASE_URL}/cases/m21/,QA5864M21P,Confirm
+M22,The none shorthand is outside explicit scope,{BASE_URL}/cases/m22/,QA5864M22P,Confirm
+B01,googlebot-only directives must not apply,{BASE_URL}/cases/b01/,QA5864B01P,Ready
+B02,bingbot-only directives must not apply,{BASE_URL}/cases/b02/,QA5864B02P,Ready
+B03,An unrelated bot name is ignored,{BASE_URL}/cases/b03/,QA5864B03P,Ready
+B04,Generic noindex survives unrelated bot allow,{BASE_URL}/cases/b04/,QA5864B04P,Ready
+B05,Matching configured bot: noindex,{BASE_URL}/cases/b05/,QA5864B05P,Ready
+B06,Matching bot name and directive case,{BASE_URL}/cases/b06/,QA5864B06P,Ready
+B07,Specific allow overrides generic block,{BASE_URL}/cases/b07/,QA5864B07P,Ready
+B08,Specific precedence is independent of tag order,{BASE_URL}/cases/b08/,QA5864B08P,Ready
+B09,Specific tag specifies only one dimension,{BASE_URL}/cases/b09/,QA5864B09P,Confirm
+B10,Partial bot-name match is not enough,{BASE_URL}/cases/b10/,QA5864B10P,Ready
+B11,Specific block overrides generic allow,{BASE_URL}/cases/b11/,QA5864B11P,Ready
+H01,Header-only noindex,{BASE_URL}/cases/h01/,QA5864H01P,Ready
+H02,Header-only nofollow,{BASE_URL}/cases/h02/,QA5864H02P,Ready
+H03,Header-only noindex and nofollow,{BASE_URL}/cases/h03/,QA5864H03P,Ready
+H04,Uppercase header directives,{BASE_URL}/cases/h04/,QA5864H04P,Ready
+H05,Whitespace-separated header directives,{BASE_URL}/cases/h05/,QA5864H05P,Ready
+H06,Mixed-case HTTP field name,{BASE_URL}/cases/h06/,QA5864H06P,Ready
+H07,Repeated X-Robots-Tag field lines,{BASE_URL}/cases/h07/,QA5864H07P,Confirm
+H08,Text document: restricted and allowed controls,{BASE_URL}/cases/h08/,QA5864H08P,Conditional
+H09,Header noindex plus meta nofollow,{BASE_URL}/cases/h09/,QA5864H09P,Confirm
+H10,Header block versus meta allow,{BASE_URL}/cases/h10/,QA5864H10P,Confirm
+H11,Meta block versus header allow,{BASE_URL}/cases/h11/,QA5864H11P,Confirm
+H12,Bot-scoped header for googlebot,{BASE_URL}/cases/h12/,QA5864H12P,Confirm
+H13,Bot-scoped header for configured bot,{BASE_URL}/cases/h13/,QA5864H13P,Confirm
+H14,Misspelled response header is not X-Robots-Tag,{BASE_URL}/cases/h14/,QA5864H14P,Ready
+L01,One nofollow link and one normal link,{BASE_URL}/cases/l01/,QA5864L01P,Ready
+L02,Uppercase rel=NOFOLLOW,{BASE_URL}/cases/l02/,QA5864L02P,Ready
+L03,Multiple rel tokens: external nofollow,{BASE_URL}/cases/l03/,QA5864L03P,Ready
+L04,"Mixed case, tabs and newlines in rel",{BASE_URL}/cases/l04/,QA5864L04P,Ready
+L05,nofollowish is not a nofollow token,{BASE_URL}/cases/l05/,QA5864L05P,Ready
+L06,Unrelated rel values stay followable,{BASE_URL}/cases/l06/,QA5864L06P,Ready
+L07,Empty rel and missing rel,{BASE_URL}/cases/l07/,QA5864L07P,Ready
+L08,Same URL: nofollow occurrence comes first,{BASE_URL}/cases/l08/,QA5864L08P,Ready
+L09,Same URL: permitted occurrence comes first,{BASE_URL}/cases/l09/,QA5864L09P,Ready
+L10,Alternate permitted path reaches the same target,{BASE_URL}/cases/l10/,QA5864L10P,Ready
+L11,Page nofollow is not a global URL blacklist,{BASE_URL}/cases/l11/,QA5864L11P,Ready
+L12,noindex parent with mixed link-level rules,{BASE_URL}/cases/l12/,QA5864L12P,Ready
+L13,Page nofollow overrides an unrestricted link,{BASE_URL}/cases/l13/,QA5864L13P,Ready
+L14,Multiple fragment occurrences are all nofollow,{BASE_URL}/cases/l14/,QA5864L14P,Ready
+L15,Comma is not a rel-token separator,{BASE_URL}/cases/l15/,QA5864L15P,Ready
+R01,robots.txt block with no page directive,{BASE_URL}/cases/r01/,QA5864R01P,Ready
+R02,robots.txt block plus noindex,{BASE_URL}/cases/r02/,QA5864R02P,Ready
+R03,robots.txt block plus nofollow,{BASE_URL}/cases/r03/,QA5864R03P,Ready
+R04,robots.txt block plus both directives,{BASE_URL}/cases/r04/,QA5864R04P,Ready
+R05,robots.txt ignore does not bypass link nofollow,{BASE_URL}/cases/r05/,QA5864R05P,Ready
+R06,robots.txt ignore does not bypass response headers,{BASE_URL}/cases/r06/,QA5864R06P,Ready
+U01,Existing document: add/remove meta noindex,{BASE_URL}/cases/u01/,QA5864U01PV1,Lifecycle
+U02,Existing document: add/remove header noindex,{BASE_URL}/cases/u02/,QA5864U02PV1,Lifecycle
+U03,Add page nofollow before introducing a new child,{BASE_URL}/cases/u03/,QA5864U03PV1,Lifecycle
+U04,Add link nofollow before introducing a new child,{BASE_URL}/cases/u04/,QA5864U04PV1,Lifecycle
+H15,Specific header allow versus generic block,{BASE_URL}/cases/h15/,QA5864H15P,Confirm
+H16,"Specific allow first, generic block second",{BASE_URL}/cases/h16/,QA5864H16P,Confirm
+H17,Specific header block versus generic allow,{BASE_URL}/cases/h17/,QA5864H17P,Confirm
+H18,"Specific block first, generic allow second",{BASE_URL}/cases/h18/,QA5864H18P,Confirm
+H19,Foreign bot allow cannot relax generic noindex,{BASE_URL}/cases/h19/,QA5864H19P,Confirm
+H20,Foreign bot block cannot restrict generic allow,{BASE_URL}/cases/h20/,QA5864H20P,Confirm
+H21,Mixed-case scoped bot name and tokens,{BASE_URL}/cases/h21/,QA5864H21P,Confirm
+H22,Lookalike scoped bot name is not an exact match,{BASE_URL}/cases/h22/,QA5864H22P,Confirm
+H23,Repeated generic fields in reverse order,{BASE_URL}/cases/h23/,QA5864H23P,Confirm
+H24,Repeated identical noindex fields,{BASE_URL}/cases/h24/,QA5864H24P,Ready
+H25,Conflicting repeated generic fields,{BASE_URL}/cases/h25/,QA5864H25P,Confirm
+H26,Conflicting generic fields with reversed order,{BASE_URL}/cases/h26/,QA5864H26P,Confirm
+H27,Split repeated specific restrictions with generic allow,{BASE_URL}/cases/h27/,QA5864H27P,Confirm
+H28,Split specific restrictions before generic allow,{BASE_URL}/cases/h28/,QA5864H28P,Confirm
+H29,Specific header overrides only the index dimension,{BASE_URL}/cases/h29/,QA5864H29P,Confirm
+H30,Combined generic and specific scopes in one field,{BASE_URL}/cases/h30/,QA5864H30P,Confirm
+H31,"Generic, matching and foreign scopes together",{BASE_URL}/cases/h31/,QA5864H31P,Confirm
+H32,Empty field followed by valid noindex,{BASE_URL}/cases/h32/,QA5864H32P,Ready
+H33,Specific header allow versus generic meta block,{BASE_URL}/cases/h33/,QA5864H33P,Confirm
+H34,Specific meta allow versus generic header block,{BASE_URL}/cases/h34/,QA5864H34P,Confirm

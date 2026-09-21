@@ -1,0 +1,1234 @@
+{
+  "scope": "Local fixture/server and packaging checks only. No Render deployment or SearchStax execution.",
+  "created_at": "2026-09-21T18:21:41.519092+00:00",
+  "checks": [
+    {
+      "name": "Health endpoint identifies v2 and correct bot name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Full fixture verifier, GET/HEAD and all physical repeated fields",
+      "passed": true,
+      "detail": "{\n  \"fixture_checks\": 213,\n  \"failures\": 0,\n  \"crawler_cases_executed\": 0\n}\nReport: /mnt/data/studio-5864-robots-qa-v2/qa/fixture-verification.json\n"
+    },
+    {
+      "name": "All original 72 scenario IDs retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "20 new header scenarios H15-H34 added",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Original meta/link/robots behavioral fixtures unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Host-root robots.txt unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B05 has exact default meta name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B07 has exact default meta name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B08 has exact default meta name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B11 has exact default meta name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "H34 has exact default meta name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No legacy name=\"searchstax\" robots meta remains",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "GET header alias/query /cases/h01/",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h01/",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h01/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h01/index.html",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h01/index.html",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h01/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h02/",
+      "passed": true,
+      "detail": "['nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h02/",
+      "passed": true,
+      "detail": "['nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h02/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h02/index.html",
+      "passed": true,
+      "detail": "['nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h02/index.html",
+      "passed": true,
+      "detail": "['nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h02/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h03/",
+      "passed": true,
+      "detail": "['noindex, nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h03/",
+      "passed": true,
+      "detail": "['noindex, nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h03/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h03/index.html",
+      "passed": true,
+      "detail": "['noindex, nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h03/index.html",
+      "passed": true,
+      "detail": "['noindex, nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h03/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h04/",
+      "passed": true,
+      "detail": "['NOINDEX, NOFOLLOW']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h04/",
+      "passed": true,
+      "detail": "['NOINDEX, NOFOLLOW']"
+    },
+    {
+      "name": "HEAD empty body /cases/h04/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h04/index.html",
+      "passed": true,
+      "detail": "['NOINDEX, NOFOLLOW']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h04/index.html",
+      "passed": true,
+      "detail": "['NOINDEX, NOFOLLOW']"
+    },
+    {
+      "name": "HEAD empty body /cases/h04/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h05/",
+      "passed": true,
+      "detail": "['noindex nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h05/",
+      "passed": true,
+      "detail": "['noindex nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h05/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h05/index.html",
+      "passed": true,
+      "detail": "['noindex nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h05/index.html",
+      "passed": true,
+      "detail": "['noindex nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h05/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h06/",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h06/",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h06/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h06/index.html",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h06/index.html",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h06/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h07/",
+      "passed": true,
+      "detail": "['noindex', 'nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h07/",
+      "passed": true,
+      "detail": "['noindex', 'nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h07/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h07/index.html",
+      "passed": true,
+      "detail": "['noindex', 'nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h07/index.html",
+      "passed": true,
+      "detail": "['noindex', 'nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h07/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h08/restricted.txt",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h08/restricted.txt",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h08/restricted.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h09/",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h09/",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h09/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h09/index.html",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h09/index.html",
+      "passed": true,
+      "detail": "['noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h09/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h10/",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h10/",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h10/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h10/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h10/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h10/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h11/",
+      "passed": true,
+      "detail": "['index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h11/",
+      "passed": true,
+      "detail": "['index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h11/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h11/index.html",
+      "passed": true,
+      "detail": "['index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h11/index.html",
+      "passed": true,
+      "detail": "['index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h11/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h12/",
+      "passed": true,
+      "detail": "['googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h12/",
+      "passed": true,
+      "detail": "['googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h12/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h12/index.html",
+      "passed": true,
+      "detail": "['googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h12/index.html",
+      "passed": true,
+      "detail": "['googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h12/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h13/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h13/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h13/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h13/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h13/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h13/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h14/",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h14/",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "HEAD empty body /cases/h14/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h14/index.html",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h14/index.html",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "HEAD empty body /cases/h14/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/r06/blocked/",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/r06/blocked/",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/r06/blocked/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/r06/blocked/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/r06/blocked/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/r06/blocked/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/u02/",
+      "passed": true,
+      "detail": "['index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/u02/",
+      "passed": true,
+      "detail": "['index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/u02/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/u02/index.html",
+      "passed": true,
+      "detail": "['index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/u02/index.html",
+      "passed": true,
+      "detail": "['index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/u02/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h15/",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h15/",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h15/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h15/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h15/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h15/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h16/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: index,follow', 'noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h16/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: index,follow', 'noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h16/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h16/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: index,follow', 'noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h16/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: index,follow', 'noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h16/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h17/",
+      "passed": true,
+      "detail": "['index,follow', 'SearchStax Crawler: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h17/",
+      "passed": true,
+      "detail": "['index,follow', 'SearchStax Crawler: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h17/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h17/index.html",
+      "passed": true,
+      "detail": "['index,follow', 'SearchStax Crawler: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h17/index.html",
+      "passed": true,
+      "detail": "['index,follow', 'SearchStax Crawler: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h17/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h18/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: noindex,nofollow', 'index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h18/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: noindex,nofollow', 'index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h18/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h18/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: noindex,nofollow', 'index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h18/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: noindex,nofollow', 'index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h18/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h19/",
+      "passed": true,
+      "detail": "['noindex', 'googlebot: index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h19/",
+      "passed": true,
+      "detail": "['noindex', 'googlebot: index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h19/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h19/index.html",
+      "passed": true,
+      "detail": "['noindex', 'googlebot: index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h19/index.html",
+      "passed": true,
+      "detail": "['noindex', 'googlebot: index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h19/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h20/",
+      "passed": true,
+      "detail": "['index,follow', 'googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h20/",
+      "passed": true,
+      "detail": "['index,follow', 'googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h20/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h20/index.html",
+      "passed": true,
+      "detail": "['index,follow', 'googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h20/index.html",
+      "passed": true,
+      "detail": "['index,follow', 'googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h20/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h21/",
+      "passed": true,
+      "detail": "['SEARCHSTAX CRAWLER: NoInDeX, NoFoLlOw']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h21/",
+      "passed": true,
+      "detail": "['SEARCHSTAX CRAWLER: NoInDeX, NoFoLlOw']"
+    },
+    {
+      "name": "HEAD empty body /cases/h21/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h21/index.html",
+      "passed": true,
+      "detail": "['SEARCHSTAX CRAWLER: NoInDeX, NoFoLlOw']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h21/index.html",
+      "passed": true,
+      "detail": "['SEARCHSTAX CRAWLER: NoInDeX, NoFoLlOw']"
+    },
+    {
+      "name": "HEAD empty body /cases/h21/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h22/",
+      "passed": true,
+      "detail": "['SearchStax Crawler-lookalike: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h22/",
+      "passed": true,
+      "detail": "['SearchStax Crawler-lookalike: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h22/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h22/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler-lookalike: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h22/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler-lookalike: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h22/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h23/",
+      "passed": true,
+      "detail": "['nofollow', 'noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h23/",
+      "passed": true,
+      "detail": "['nofollow', 'noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h23/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h23/index.html",
+      "passed": true,
+      "detail": "['nofollow', 'noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h23/index.html",
+      "passed": true,
+      "detail": "['nofollow', 'noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h23/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h24/",
+      "passed": true,
+      "detail": "['noindex', 'noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h24/",
+      "passed": true,
+      "detail": "['noindex', 'noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h24/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h24/index.html",
+      "passed": true,
+      "detail": "['noindex', 'noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h24/index.html",
+      "passed": true,
+      "detail": "['noindex', 'noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h24/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h25/",
+      "passed": true,
+      "detail": "['index,follow', 'noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h25/",
+      "passed": true,
+      "detail": "['index,follow', 'noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h25/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h25/index.html",
+      "passed": true,
+      "detail": "['index,follow', 'noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h25/index.html",
+      "passed": true,
+      "detail": "['index,follow', 'noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h25/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h26/",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h26/",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h26/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h26/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h26/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h26/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h27/",
+      "passed": true,
+      "detail": "['index,follow', 'SearchStax Crawler: noindex', 'SearchStax Crawler: nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h27/",
+      "passed": true,
+      "detail": "['index,follow', 'SearchStax Crawler: noindex', 'SearchStax Crawler: nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h27/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h27/index.html",
+      "passed": true,
+      "detail": "['index,follow', 'SearchStax Crawler: noindex', 'SearchStax Crawler: nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h27/index.html",
+      "passed": true,
+      "detail": "['index,follow', 'SearchStax Crawler: noindex', 'SearchStax Crawler: nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h27/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h28/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: nofollow', 'SearchStax Crawler: noindex', 'index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h28/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: nofollow', 'SearchStax Crawler: noindex', 'index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h28/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h28/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: nofollow', 'SearchStax Crawler: noindex', 'index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h28/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: nofollow', 'SearchStax Crawler: noindex', 'index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h28/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h29/",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h29/",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index']"
+    },
+    {
+      "name": "HEAD empty body /cases/h29/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h29/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h29/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index']"
+    },
+    {
+      "name": "HEAD empty body /cases/h29/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h30/",
+      "passed": true,
+      "detail": "['noindex,nofollow, SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h30/",
+      "passed": true,
+      "detail": "['noindex,nofollow, SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h30/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h30/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow, SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h30/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow, SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h30/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h31/",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index,follow', 'googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h31/",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index,follow', 'googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h31/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h31/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index,follow', 'googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h31/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow', 'SearchStax Crawler: index,follow', 'googlebot: noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h31/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h32/",
+      "passed": true,
+      "detail": "['', 'noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h32/",
+      "passed": true,
+      "detail": "['', 'noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h32/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h32/index.html",
+      "passed": true,
+      "detail": "['', 'noindex']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h32/index.html",
+      "passed": true,
+      "detail": "['', 'noindex']"
+    },
+    {
+      "name": "HEAD empty body /cases/h32/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h33/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h33/",
+      "passed": true,
+      "detail": "['SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h33/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h33/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h33/index.html",
+      "passed": true,
+      "detail": "['SearchStax Crawler: index,follow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h33/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h34/",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h34/",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h34/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "GET header alias/query /cases/h34/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD header alias/query /cases/h34/index.html",
+      "passed": true,
+      "detail": "['noindex,nofollow']"
+    },
+    {
+      "name": "HEAD empty body /cases/h34/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fixture does not simulate User-Agent decisions /cases/h15/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fixture does not simulate User-Agent decisions /cases/h27/",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No-slash redirect preserves final response headers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Controlled error /does-not-exist",
+      "passed": true,
+      "detail": "404"
+    },
+    {
+      "name": "Controlled error /config.json",
+      "passed": true,
+      "detail": "404"
+    },
+    {
+      "name": "Controlled error /qa/http-headers.json",
+      "passed": true,
+      "detail": "404"
+    },
+    {
+      "name": "Controlled error /%2e%2e/config.json",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Controlled error /%00",
+      "passed": true,
+      "detail": "400"
+    },
+    {
+      "name": "Read-only server rejects POST",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Offline deployment-check UI accepts verified local response values",
+      "passed": true,
+      "detail": "MATCH /cases/h03/: HTTP 200; X-Robots-Tag = noindex, nofollow\nMATCH /cases/h15/: HTTP 200; X-Robots-Tag = noindex,nofollow, SearchStax Crawler: index,follow\nBrowser checks combine repeated fields. Use the strict CLI verifier to test physical repeated fields. These are fixture checks, not crawler results."
+    },
+    {
+      "name": "Overview never offers a suite crawl seed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Header catalog has 34 cases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Header H15 dialog shows exact identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "H15 proposal visibly separated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "H15 dialog gives individual scenario URL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "H15 browser header-check UI matches offline local response",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile layout no horizontal viewport overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All initial crawler records remain Not run",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser has no JavaScript runtime errors",
+      "passed": true,
+      "detail": "[]"
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "checks": 244,
+    "failures": 0,
+    "header_alias_method_checks": 142,
+    "crawler_cases_executed": 0,
+    "render_hosts_tested": 0
+  }
+}

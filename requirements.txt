@@ -1,0 +1,1 @@
+# No third-party runtime or build dependencies. Python 3.10+ standard library only.

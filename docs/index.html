@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Robots Directive Lab | SearchStax QA</title>
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/app.js"></script>
+</head><body>
+<aside class="sidebar" aria-label="QA navigation">
+<div class="side-brand"><span class="brand-mark">S/</span><div>SearchStax<small>QUALITY ENGINEERING</small></div></div>
+<p class="nav-caption">TEST WORKSPACE</p>
+<nav class="side-nav">
+<button class="nav-btn active" data-tab="overview" aria-current="page"><span class="nav-symbol" aria-hidden="true">&#9638;</span> Overview</button>
+<button class="nav-btn" data-tab="catalog"><span class="nav-symbol" aria-hidden="true">&#9776;</span> Test catalog <span class="nav-count" id="nav-count">--</span></button>
+<button class="nav-btn" data-tab="guide"><span class="nav-symbol" aria-hidden="true">&#9655;</span> Execution guide</button>
+<button class="nav-btn" data-tab="decisions"><span class="nav-symbol" aria-hidden="true">&#9671;</span> Open decisions <span class="nav-count" id="decision-count">--</span></button>
+</nav>
+<div class="side-bottom"><span class="status-dot"></span>Static fixtures + HTTP headers<div class="side-ticket">STUDIO-5864 &nbsp; / &nbsp; v2.0</div><p class="small" style="margin-top:14px">This console records evidence.<br>It does not run the crawler.</p></div>
+</aside>
+<main class="app-main">
+<header class="topbar"><div class="breadcrumb">Crawler QA &nbsp; / &nbsp; <b>Robots directives</b></div><div class="top-actions"><span class="chip green">ISOLATED TESTBED</span><button class="btn small" id="export-results">Export run evidence &darr;</button></div></header>
+<div id="load-error" class="error-banner" hidden></div>
+<section class="hero"><div><div class="eyebrow">PAGE-LEVEL CRAWLER CONTROLS</div><h1>Robots Directive Lab</h1><p>Test what gets processed, indexed and followed. Controlled crawl paths, explicit expectations and evidence you can trace back to every URL.</p></div><div class="hero-badge"><small>ACTIVE FIXTURE PHASE</small><strong id="phase-label">Loading fixtures...</strong></div></section>
+<div class="stats" aria-label="Coverage summary">
+<div class="stat"><span class="stat-label">Test scenarios</span><strong class="stat-number" id="stat-total">--</strong><span class="stat-foot">Six focused coverage areas</span></div>
+<div class="stat"><span class="stat-label">Defined expectations</span><strong class="stat-number" id="stat-ready">--</strong><span class="stat-foot">Hosting prerequisites still apply</span></div>
+<div class="stat"><span class="stat-label">Product decisions</span><strong class="stat-number" id="stat-confirm">--</strong><span class="stat-foot">Not assumed acceptance criteria</span></div>
+<div class="stat"><span class="stat-label">Results recorded</span><strong class="stat-number" id="stat-recorded">0</strong><span class="stat-foot" id="result-summary">Actual crawler results, entered manually</span></div>
+</div>
+<div class="run-strip" aria-label="Current run settings">
+<label><span class="field-label">RUN LABEL</span><input class="form-input" id="run-id" value="Run-001" maxlength="80"></label>
+<label><span class="field-label">ENVIRONMENT</span><select class="form-input" id="environment"><option>QA</option><option>Staging</option><option>Production</option><option>Local fixture check</option></select></label>
+<label><span class="field-label">IGNORE ROBOTS.TXT</span><select class="form-input" id="ignore-robots"><option value="off">OFF - respect robots.txt</option><option value="on">ON - bypass robots.txt only</option></select></label>
+<label><span class="field-label">CRAWL RUN ID (EVIDENCE)</span><input class="form-input" id="crawl-id" placeholder="Enter the real crawl run ID" maxlength="120"></label>
+<p class="run-help">These are notebook labels only; they do not change SearchStax settings. Results are saved in this browser, keyed by run label, environment, toggle and fixture phase. Export before clearing browser data.</p>
+</div>
+<section id="tab-overview" class="tab-content">
+<div class="notice"><span class="notice-symbol" aria-hidden="true">!</span><div><strong>v2: real headers, exact bot name, isolated scenario starts.</strong><p>Deploy this package as a Render <b>Web Service / Python 3 / Free</b>. The included server sends the real headers and preserves repeated fields at the origin. Start each crawl from its scenario URL, never the dashboard.</p><button class="btn small" id="verify-deployment">Check this deployment</button><div id="deployment-output" class="http-result" aria-live="polite"></div></div></div>
+<div class="section-head"><div><h2>Choose a scenario</h2><p>Browse an area, open a case and copy its individual Start URL. Never use the dashboard, suite or child URLs as the Start URL.</p></div><span class="chip" id="url-count">-- fixture URLs</span></div>
+<div class="suite-grid" id="suite-grid"></div><div class="section-head"><h2>Updated header smoke checks</h2><p>Open a case, then copy its scenario Start URL.</p></div><div class="quick-cases" id="quick-cases"></div>
+<div class="section-head"><h2>Three steps to reliable evidence</h2></div>
+<section class="panel"><div class="workflow"><div><span class="step-number">01 / VERIFY THE FIXTURE</span><h3>Check the actual response.</h3><p>Inspect the final HTTP headers and original HTML. A code example on a page is not a robots directive.</p></div><div><span class="step-number">02 / RUN A CLEAN CRAWL</span><h3>Keep discovery controlled.</h3><p>Use a dedicated index. Disable sitemap discovery and keep target URLs out of all seeds and imports.</p></div><div><span class="step-number">03 / RECORD THE OUTCOME</span><h3>Separate queue from index.</h3><p>Capture real crawl logs, URL-level outcomes and index documents. A missing search result does not prove nofollow.</p></div></div></section>
+</section>
+<section id="tab-catalog" class="tab-content" hidden>
+<div class="section-head"><div><h2>Test catalog</h2><p>Open a case for source directives, target expectations, URL copies and manual evidence.</p></div><button class="btn small" id="download-tests">TestRail CSV &darr;</button></div>
+<div class="filters"><input class="form-input" id="search" type="search" placeholder="Search ID, scenario or directive" aria-label="Search cases"><select class="form-input" id="group-filter" aria-label="Filter coverage area"><option value="">All coverage areas</option></select><select class="form-input" id="gate-filter" aria-label="Filter readiness"><option value="">All readiness levels</option><option>Ready</option><option>Conditional</option><option>Confirm</option><option>Lifecycle</option></select></div>
+<div class="table-wrap"><table><thead><tr><th>Case</th><th>Scenario</th><th>Parent indexing</th><th>Readiness</th><th>Actual result</th><th><span class="small">Start URL / details</span></th></tr></thead><tbody id="case-rows"></tbody></table></div>
+<div class="table-footer"><span id="page-label"></span><div class="buttons"><button class="btn small" id="prev">&larr; Previous</button><button class="btn small" id="next">Next &rarr;</button></div></div>
+</section>
+<section id="tab-guide" class="tab-content" hidden>
+<div class="section-head"><div><h2>Execution guide</h2><p>Use the repository README and qa/TEST-PLAN.md for the full runbook.</p></div></div>
+<div class="guide-grid">
+<section class="panel"><div class="eyebrow">01 / PUBLISH</div><h3>Render Free Web Service</h3><ol><li>Upload the extracted contents to a new GitHub repository. Keep <code>render.yaml</code>, <code>tools/</code>, <code>source/</code> and <code>docs/</code> at the same level.</li><li>Render: <b>New &gt; Web Service</b>. Select <b>Python 3</b> and the <b>Free</b> instance.</li><li>Build: <code>python3 tools/build.py</code></li><li>Start: <code>python3 tools/serve.py --bind 0.0.0.0</code></li><li>Leave Root Directory empty when files are at the repo root. There is no Publish Directory for this service.</li></ol><p>Alternative: <b>New &gt; Blueprint</b> reads the included <code>render.yaml</code>. Create a new service, not the old Static Site. Do not add a catch-all rewrite.</p></section>
+<section class="panel"><div class="eyebrow">02 / VERIFY</div><h3>Check the deployed response</h3><p>Open the homepage to wake an idle free service, then check live headers. A cold-start timeout is a hosting issue, not a robots-directive failure.</p><pre><code>python3 tools/verify.py YOUR_BASE_URL --require-repeated</code></pre><p>Repeated fields are emitted separately at the origin. A proxy can combine them; the strict verifier reports that instead of claiming the raw-field test passed. Browser checks validate combined values only.</p><p>Local preview: <code>python3 tools/serve.py --port 8000</code>. SearchStax cannot access your laptop's localhost.</p></section>
+<section class="panel"><div class="eyebrow">03 / CONFIGURE CRAWL</div><h3>One scenario per crawl</h3><p>Open a case and use <b>Copy Start URL</b>. Use a dedicated QA index and clean queue. Disable sitemap discovery, imports and other Start URLs. Keep the scenario's child paths in scope; depth at least 5, item budget at least 500.</p><p>The R-cases start at an allowed entry, for example <code>/cases/r06/</code>, which discovers its blocked parent. This avoids any special handling of robots-disallowed Start URLs.</p><p>Run each selected scenario with Ignore robots.txt OFF and ON in separate clean runs. Preserve the index only for lifecycle tests.</p></section>
+<section class="panel"><div class="eyebrow">04 / BOT IDENTITY</div><h3>Default: SearchStax Crawler</h3><p id="bot-summary"></p><pre><code>&lt;meta name="SearchStax Crawler" content="noindex"&gt;
+X-Robots-Tag: SearchStax Crawler: noindex</code></pre><p>The meta name uses the default supplied by QA. Record the full observed HTTP User-Agent separately. Scoped-header support and conflict resolution are explicit product-decision cases, not silently assumed.</p></section>
+<section class="panel"><div class="eyebrow">05 / OBSERVE</div><h3>Measure different pipeline outcomes</h3><p><b>noindex:</b> parent can be fetched/processed but cannot add or update its document. Its ordinary child remains eligible.</p><p><b>nofollow:</b> parent can index; no child may be enqueued from its links. A separate permitted occurrence can still enqueue the same target.</p><p>Record app ID, crawl definition/run IDs, timestamps, actual User-Agent, response headers, queue provenance and Solr/index document evidence. Do not infer queue behavior only from search-preview absence.</p></section>
+<section class="panel"><div class="eyebrow">06 / SAME-URL UPDATES</div><h3>Use the lifecycle phases</h3><pre><code>python3 tools/build.py --phase baseline
+python3 tools/build.py --phase restricted
+python3 tools/build.py --phase restored</code></pre><p>These are three separate deploy-and-crawl steps, not commands to run back-to-back. Keep the same parent URL and existing index. Force a real re-fetch after each deployment.</p><p>U01/U02 prohibit a V2 update under noindex. Retention versus deletion of V1 is not defined by the ticket. U03/U04 introduce a previously undiscovered child to avoid stale-queue false failures.</p></section>
+</div>
+</section>
+<section id="tab-decisions" class="tab-content" hidden>
+<div class="notice"><span class="notice-symbol" aria-hidden="true">!</span><div><strong>Do not turn assumptions into release-blocking defects.</strong><p>The ticket is the acceptance contract. Google behavior is useful background, not a substitute for SearchStax-specific precedence.</p></div></div>
+<div class="section-head"><div><h2>Contract decisions to resolve</h2><p>These fixtures exist, but their proposed outcomes are labeled separately from confirmed acceptance criteria.</p></div></div>
+<div class="decision-grid" id="decision-grid"></div>
+<div class="panel" style="margin-top:18px"><h3>Also required before sign-off</h3><p>The default meta name is now SearchStax Crawler. Confirm HTTP scope/source precedence and existing-document retention/deletion under noindex; establish text parser support; and verify repeated field delivery. A proposed outcome is not a product pass.</p></div>
+</section>
+<footer class="bottom-line"><span>STUDIO-5864 / Page-Level Robots Directives / Controlled QA fixture package</span><span>Expected results are authored. Actual results are never simulated.</span></footer>
+</main>
+<dialog id="case-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow" id="detail-id">CASE</span><button class="close-button" id="close-dialog" aria-label="Close case details">&times;</button></div><div class="dialog-body" id="detail-body"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<noscript><div class="error-banner">The operator dashboard needs JavaScript. All crawler fixture pages are prebuilt static HTML and do not require it. Use the README to select a seed.</div></noscript>
+</body></html>
